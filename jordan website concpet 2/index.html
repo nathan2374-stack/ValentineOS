@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALENTINE_OS // V9_QUANTUM_CORE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flicker">
+    <canvas id="master-canvas"></canvas>
+    <div class="glitch-overlay"></div>
+    <div class="crt-overlay"></div>
+
+    <div class="os-container">
+        <header class="top-bar">
+            <div class="status-pill">
+                <div class="pulse-dot"></div>
+                <span>CORE_V10.4_ULTRA</span>
+                <span style="color:var(--neon-gold)">//</span>
+                <span>QUANTUM_ENCRYPTION_ENABLED</span>
+                <span style="color:var(--neon-pink); margin-left: 10px;">❤ ❤ ❤</span>
+            </div>
+            <div id="real-time" style="font-family: var(--font-code); color: var(--neon-cyan);">00:00:00:00</div>
+            <div style="color:var(--neon-pink); display: flex; gap: 20px;">
+                <span>NET_STATUS: ADORING</span>
+                <span>USER: MATTHEW_W</span>
+            </div>
+        </header>
+
+        <main class="main-grid">
+            <section class="side-panel">
+                <div class="panel-module">
+                    <div class="module-header"><span>TARGET_DOSSIER</span> <span>[SEC_01]</span></div>
+                    <div class="module-content">
+                        <div class="data-row"><span class="data-label">NAME</span> <span class="data-value">JORDAN_VALENTINE</span></div>
+                        <div class="data-row"><span class="data-label">UPLINK_EST</span> <span class="data-value">25 MAY 2025</span></div>
+                        <div class="data-row"><span class="data-label">SYNC_EVENT</span> <span class="data-value">21 DEC 2025</span></div>
+                        <div class="data-row"><span class="data-label">COORDS</span> <span class="data-value">33.9249° S, 18.4241° E</span></div>
+                        <div class="data-row"><span class="data-label">OBJECTIVE</span> <span class="data-value" style="color:var(--neon-pink)">ADORE_ALWAYS</span></div>
+                    </div>
+                </div>
+                
+                <div class="panel-module">
+                    <div class="module-header"><span>NEURAL_ANALYTICS</span></div>
+                    <div class="module-content">
+                        <div class="biometric-grid" id="bio-grid"></div>
+                        <div class="neural-bars" id="neural-bars"></div>
+                        <div style="margin-top:10px; font-size: 0.55rem; color:var(--neon-pink); display: flex; justify-content: space-between;">
+                            <span>DOPAMINE: CRITICAL</span>
+                            <span>OXYTOCIN: MAX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-module">
+                    <div class="module-header"><span>LOGISTICS_ENGINE</span></div>
+                    <div class="module-content">
+                        <div class="data-row"><span class="data-label">CCMA_HEARING</span> <span class="data-value" style="color:var(--neon-gold)">11 FEB 2026</span></div>
+                        <div class="data-row"><span class="data-label">FLIGHT_LOCK</span> <span class="data-value">PENDING_AUTH</span></div>
+                        <div class="data-row"><span class="data-label">HEART_RATE</span> <span class="data-value" id="hr-val">72 BPM</span></div>
+                        <div class="data-row"><span class="data-label">SYS_TEMP</span> <span class="data-value">36.5°C</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel-module proposal-core">
+                <div class="scramble-box"></div>
+                <div class="hero-question">
+                    <span>PROJECT_ADORE_V9</span>
+                    Jordan, will you be<br>my Valentine?
+                </div>
+
+                <div class="button-cluster">
+                    <button id="auth-yes-center" class="decision-btn btn-yes">AUTHORIZE ❤</button>
+                    <button id="auth-no-btn" class="decision-btn btn-no">DECLINE</button>
+                </div>
+
+                <div class="legal-timer">
+                    <span style="font-size:0.55rem; letter-spacing:3px; color:var(--neon-gold); text-transform:uppercase; display:block; margin-bottom:10px;">CCMA Case Resolution Countdown</span>
+                    <span id="ccma-timer" class="timer-val">00d : 00h : 00m : 00s</span>
+                    <div style="font-size: 0.5rem; margin-top:10px; color:rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 2px;">
+                        Phase: Cape Town Deployment Ready
+                    </div>
+                </div>
+                
+                <div style="position: absolute; bottom: 20px; font-family: var(--font-code); font-size: 0.6rem; color: var(--neon-pink); opacity: 0.5;">
+                    SCANNING_BEAUTY... [MATCH_FOUND]
+                </div>
+            </section>
+
+            <section class="side-panel">
+                <div class="panel-module">
+                    <div class="module-header"><span>ORBITAL_CAM // CPT_Z01</span></div>
+                    <div class="module-content" style="padding:0; position: relative;">
+                        <img src="https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?auto=format&fit=crop&q=80&w=400" 
+                             style="width:100%; height:100%; object-fit:cover; filter: contrast(1.4) brightness(0.6) grayscale(0.5) sepia(0.2) hue-rotate(140deg);">
+                        <div style="position:absolute; top:10px; right:10px; font-size: 0.5rem; color:var(--neon-pink); border:1px solid var(--neon-pink); padding: 2px 5px;">LIVE_FEED</div>
+                    </div>
+                </div>
+
+                <div class="panel-module">
+                    <div class="module-header"><span>AFFECTION_ARRAY</span></div>
+                    <div class="module-content">
+                        <div style="margin-bottom: 10px;">
+                            <label style="font-size: 0.5rem; color: var(--neon-pink);">MATTHEW_HEART_SYNC</label>
+                            <div class="ecg-container">
+                                <div class="ecg-spike" style="animation-delay: 0.1s"></div>
+                                <div class="ecg-spike" style="animation-delay: 0.3s"></div>
+                                <div class="ecg-spike" style="animation-delay: 0.2s"></div>
+                                <div class="ecg-spike" style="animation-delay: 0.5s"></div>
+                                <div class="ecg-spike" style="animation-delay: 0.4s"></div>
+                                <div class="ecg-spike" style="animation-delay: 0.1s"></div>
+                                <div class="ecg-spike" style="animation-delay: 0.6s"></div>
+                                <div class="ecg-spike" style="animation-delay: 0.2s"></div>
+                                <div class="ecg-spike" style="animation-delay: 0.4s"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <label style="font-size: 0.5rem; color: var(--neon-cyan);">JORDAN_HEART_SYNC</label>
+                            <div class="ecg-container">
+                                <div class="ecg-spike" style="background: var(--neon-cyan); animation-delay: 0.5s"></div>
+                                <div class="ecg-spike" style="background: var(--neon-cyan); animation-delay: 0.2s"></div>
+                                <div class="ecg-spike" style="background: var(--neon-cyan); animation-delay: 0.4s"></div>
+                                <div class="ecg-spike" style="background: var(--neon-cyan); animation-delay: 0.1s"></div>
+                                <div class="ecg-spike" style="background: var(--neon-cyan); animation-delay: 0.6s"></div>
+                                <div class="ecg-spike" style="background: var(--neon-cyan); animation-delay: 0.3s"></div>
+                                <div class="ecg-spike" style="background: var(--neon-cyan); animation-delay: 0.2s"></div>
+                                <div class="ecg-spike" style="background: var(--neon-cyan); animation-delay: 0.5s"></div>
+                                <div class="ecg-spike" style="background: var(--neon-cyan); animation-delay: 0.4s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-module">
+                    <div class="module-header"><span>SYSTEM_INTEGRITY</span></div>
+                    <div class="module-content">
+                        <div class="data-row"><span class="data-label">CORE_LOAD</span> <span class="data-value">0.0001%</span></div>
+                        <div class="data-row"><span class="data-label">ENCRYPTION</span> <span class="data-value">HEART-SHA-512</span></div>
+                        <div class="data-row"><span class="data-label">UPTIME</span> <span class="data-value">FOREVER</span></div>
+                        <div class="data-row"><span class="data-label">SYNC_RATE</span> <span class="data-value" style="color:var(--neon-pink)">100%</span></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bottom-deck">
+            <div class="panel-module terminal-module">
+                <div class="module-header"><span>ARGUMENT_PROCESSOR_V10 // DEBATE_CORE</span></div>
+                <div class="terminal-feed" id="term-out">
+                    [SYSTEM] Awaiting user interaction...
+                    <br>[LOG] Detecting high beauty signature: Jordan.
+                    <br>[LOG] CCMA deployment schedule synchronized.
+                    <br>[LOG] Probability of successful deployment: 100%.
+                    <br>[ROMANCE] Initialization of Valentine protocols complete.
+                </div>
+                <div class="terminal-input-row">
+                    <span style="color:var(--neon-pink); font-family:var(--font-code); padding-right:10px;">$</span>
+                    <input type="text" id="term-in" placeholder="Enter cross-examination data (objections)..." autocomplete="off">
+                </div>
+            </div>
+
+            <div class="panel-module">
+                <div class="module-header"><span>MEMORY_RECOVERY_BLOCK</span></div>
+                <div class="module-content" style="display: flex; flex-direction: column; gap: 8px;">
+                    <div style="font-size: 0.6rem; color: var(--neon-pink);">❤ RECOVERED_FRAGMENTS:</div>
+                    <div style="font-family: var(--font-code); font-size: 0.55rem; background: rgba(0,0,0,0.3); padding: 5px; border-left: 2px solid var(--neon-pink);">
+                        "First trip Dec 21 - Jan 11 was unforgettable. Next phase: Valentines."
+                    </div>
+                    <div style="font-family: var(--font-code); font-size: 0.55rem; background: rgba(0,0,0,0.3); padding: 5px; border-left: 2px solid var(--neon-cyan);">
+                        "Destination: Cape Town. Duration: Permanent."
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div style="background:var(--neon-pink); height:1px; width:100%; opacity:0.3; margin-top: 5px;"></div>
+        <footer style="font-family:var(--font-code); font-size:0.5rem; padding:5px 20px; color:rgba(255, 0, 127, 0.5); display:flex; justify-content:space-between;">
+            <div>VALENTINE_OS_REVISION_10 // PROPERTY_OF_PROJECT_ADORE</div>
+            <div>STABLE_UPLINK_ESTABLISHED_2025 // ❤ ❤ ❤</div>
+        </footer>
+    </div>
+
+    <div id="deployment-success">
+        <div class="success-frame">
+            <div class="relationship-seal">Official Authorization Confirmed</div>
+            <div class="scramble-box"></div>
+            
+            <div class="heart-sync">
+                <div class="user-tag">MATTHEW</div>
+                <div style="font-size: 2rem; color: var(--neon-pink); animation: pulse 1s infinite;">❤️</div>
+                <div class="user-tag">JORDAN</div>
+            </div>
+
+            <h1 class="hero-question" style="color:#fff; font-size: 3rem; margin-bottom: 5px; text-shadow: 0 0 30px var(--neon-blue);">SHE'S MY VALENTINE</h1>
+            <p style="font-family:var(--font-header); font-size: 0.7rem; letter-spacing:12px; color: var(--neon-gold); margin-bottom: 20px;">MATTHEW IS NOW THE AUTHORIZED VALENTINE</p>
+            
+            <div class="flight-animation-box">
+                <div class="plane-path"></div>
+                <div style="position: absolute; top: 15px; left: 20px; font-size: 0.55rem; color: var(--neon-blue); letter-spacing: 3px; font-family: var(--font-header);">TRANSIT_LOG: CPT_DEPLOYMENT_ACTIVE</div>
+                
+                <div class="moving-plane">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 16V14.5L13 9.5V3.5C13 2.67 12.33 2 11.5 2C10.67 2 10 2.67 10 3.5V9.5L2 14.5V16L10 13.5V19L8 20.5V22L11.5 21L15 22V20.5L13 19V13.5L21 16Z" fill="var(--neon-pink)" />
+                        <circle cx="11.5" cy="21" r="6" stroke="var(--neon-cyan)" stroke-width="0.5">
+                            <animate attributeName="r" values="6;15;6" dur="2s" repeatCount="indefinite" />
+                            <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" />
+                        </circle>
+                    </svg>
+                    <div style="color:var(--neon-pink); font-family:var(--font-header); font-size: 0.6rem; letter-spacing: 2px;">DESTINATION: US</div>
+                </div>
+
+                <div style="position: absolute; bottom: 15px; right: 20px; font-family: var(--font-code); font-size: 0.6rem; color: var(--neon-cyan);">UPLINK_STATUS: PERMANENT</div>
+            </div>
+
+            <div class="success-stats">
+                <div class="stat-card">
+                    <label>Assigned Partner</label>
+                    <div>Matthew W</div>
+                </div>
+                <div class="stat-card">
+                    <label>Partner Identity</label>
+                    <div>Jordan V</div>
+                </div>
+                <div class="stat-card">
+                    <label>Expiry Date</label>
+                    <div>NEVER</div>
+                </div>
+            </div>
+
+            <div style="text-align: left; font-family:var(--font-code); font-size:0.7rem; line-height: 2; border-top: 1px solid rgba(0, 242, 255, 0.2); padding-top: 25px; margin-top: 25px; color: rgba(255,255,255,0.7); display: grid; grid-template-columns: 1fr 1fr;">
+                <div>
+                    <span style="color: var(--neon-cyan)">> AUTH_ID:</span> MATT_JORDAN_SYNC_01<br>
+                    <span style="color: var(--neon-cyan)">> CCMA_WIN:</span> FEB 11 RECOGNIZED<br>
+                    <span style="color: var(--neon-pink)">> PROTOCOL:</span> ADORE_V9.0_FINAL
+                </div>
+                <div style="text-align: right; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 20px;">
+                    "No more debating required. <br>The system has found its perfect match."
+                </div>
+            </div>
+            
+            <button class="decision-btn btn-yes" style="margin-top:40px; padding: 15px 50px; font-size: 0.8rem; background: rgba(0, 242, 255, 0.1);" onclick="location.reload()">CLOSE_ENCRYPTED_SESSION</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
