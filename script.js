@@ -1,5 +1,5 @@
 (function() {
-    const apiKey = ""; // Add your Gemini API Key here if needed
+    const apiKey = "AIzaSyBWk2Q8eiIjWRSqFhV98AhlPm63V-MlZ_4"; // Add your Gemini API Key here if needed
     const canvas = document.getElementById('master-canvas');
     const ctx = canvas.getContext('2d');
     let w, h;
@@ -185,4 +185,5 @@
     }
 
     tIn.onkeydown = (e) => { if(e.key === 'Enter') handleTermInput(); };
+
 })();
